@@ -35,9 +35,9 @@ this table contain the data about each author who had written or upload the arti
   
 **this database is meant to analyse the log table and specify :**
 # the most popular articles:metal:
-'''
+```
 select articles.slug, count(log.path) from log,articles where '/article/'||articles.slug like log.path group by articles.slug order by count(log.path) desc; :droplet: 
-'''
+```
 
 this query add **'/article/'** to slug in the articles table and then join this table with log table groubed by slug and ordered by logs count then count the reputation of each path that is like the corresponding slug in articles table then print the numbers in descend ing order
 
