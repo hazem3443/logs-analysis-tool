@@ -6,10 +6,16 @@ this is a tool to aggregate important data from live database using psycopg2 wit
 # **required tools to run this program**:umbrella:
 1-Vagrant [Vagrant 1.9.2 .msi](https://releases.hashicorp.com/vagrant/1.9.2/)
 2-VirtualBox [Virualbox 5.1.38-win.exe](https://download.virtualbox.org/virtualbox/5.1.38/)
+3-postgres python library on linux shell with pip command
 
-# SETUP & RUN :trollface:
-**first** you need to setup virtualbox then vagrent and run the terminal (of GIT is prefered [GIT BASH](https://git-scm.com/downloads))
-
+# SETUP & RUN :frog:
+**1-** you need to setup virtualbox then vagrent and run the terminal (of GIT is prefered [GIT BASH](https://git-scm.com/downloads))
+**2-** to establish ubuntu os on vagrant machine by following [this link](https://app.vagrantup.com/ubuntu/boxes/trusty64)
+**3-** then we need to run ubuntu first we turn vagrant on with this command in Git command Shell```vagrant up``` and run the vm with this command ```vagrant ssh``` 
+**4-** now we typing on ubuntu shell throw git shell also if you want to switch back to git command shell you need to press ctl+z
+**5-** setup postgres library with python using this command on vagrant shell ```sudo pip install psycopg2``` ***note** after login to ubuntu vagrant 
+**6-** now we need to load the newspaper.sql file to news database with this command ```psql -d news -f newsdata.sql ```
+**7-** then login to th news data base and run the folloing queries to test it then run python code  to get the data printed out in an appropriate way
 
 ## :star2:tables contained:star2:
 
