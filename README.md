@@ -4,9 +4,9 @@
 this is a tool to aggregate important data from live database using psycopg2 with PostgreSQL database
 
 # **required tools to run this program**:umbrella:
-* 1- Vagrant [Vagrant 1.9.2 .msi](https://releases.hashicorp.com/vagrant/1.9.2/)
-* 2-VirtualBox [Virualbox 5.1.38-win.exe](https://download.virtualbox.org/virtualbox/5.1.38/)
-* 3-postgres python library on linux shell with pip command
+* Vagrant [Vagrant 1.9.2 .msi](https://releases.hashicorp.com/vagrant/1.9.2/)
+* VirtualBox [Virualbox 5.1.38-win.exe](https://download.virtualbox.org/virtualbox/5.1.38/)
+* postgres python library on linux shell with pip command
 
 # SETUP & RUN :frog:
   * **1-** you need to setup virtualbox then vagrent and run the terminal (of GIT is prefered [GIT BASH](https://git-scm.com/downloads))
