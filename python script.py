@@ -16,17 +16,15 @@ print("-------------------the most popular three articles--------------------")
 print("", )
 
 for x in range(0, 3):
-    print ("{0:30} 		{1:6} views".format(query1[x][0], query1[x][1]))
+    print("{0:30}         {1:6} views".format(query1[x][0], query1[x][1]))
 
 print("", )
-print("----------------the most popular three article "
-      "authors----------------")
+print("----------------the most popular three article authors----------------")
 
 print("", )
 
 for y in range(0, 4):
-    print("{0:30} 		{1:6} views".format(query2[y][0],
-          query2[y][1]))
+    print("{0:30}         {1:6} views".format(query2[y][0], query2[y][1]))
 
 print("", )
 print("-----------days when more than 1% of requests lead to errors----------")
