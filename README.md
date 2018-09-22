@@ -60,7 +60,7 @@ this query can be extracted from the first query with create view clause or as a
 ```
 select authors.name, sum(numviews.count) from authors, (select articles.slug, count(log.path) from log,articles where '/article/'||articles.slug like log.path group by articles.slug order by count(log.path) desc)as numviews,articles where articles.slug=numviews.slug and articles.author=authors.id group by authors.name order by sum(numviews.count) desc;
 ```
-## the error percentage in one day that exceeds 1%:fu:
+## the error percentage in one day that exceeds 1%:+1:
 the last query is using subquery methodology to use it's result to extract it's result which contain the value of errors during a day which later in this query will be constrained to a value that exceeds 1% error during a day
 ```
 select to_char(time,'Mon DD,YYYY'),trunc(err::numeric,5) ||'%' as requesterrors from (select log.time::date,sum(case when log.status!='200 OK' then 1 end)::float / sum(case when log.method='GET' then 1 end)::float *100 ::float as err from log group by log.time::date order by log.time::date)as result where err > 1;
