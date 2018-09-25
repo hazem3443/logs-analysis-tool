@@ -1,6 +1,6 @@
 # :exclamation:logs-analysis-tool:anger:
 
-#**Database content**
+
 this is a tool to aggregate important data from live database using psycopg2 with PostgreSQL database
 
 # **required tools to run this program**:umbrella:
